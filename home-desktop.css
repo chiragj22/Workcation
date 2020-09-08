@@ -7,7 +7,7 @@ body {
     font-family: "Open Sans", sans-serif;
     top: 0px;
     left: 0px;
-    background: rgb(240, 240, 240);
+    background: rgb(245, 245, 245);
     opacity: 1;
     margin-bottom: 25px;
 }
@@ -60,7 +60,7 @@ body {
     width: 25vw;
     font-size: 1.1vw;
     font-weight: 600;
-    padding: .5vw 1vw;
+    padding: .8vw 1vw;
     margin: 3.5vw 0 2.5vw 0;
 }
 
@@ -215,8 +215,9 @@ body {
 }
 
 .states-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1vw;
     margin-top: 2vw;
     justify-content: center;
