@@ -348,11 +348,12 @@ body {
 }
 
 .blogs-title {
-    background-color: white;
-    color: black;
+    height: 3vw;
+    color: white;
     font-size: 1vw;
     font-weight: 600;
     padding: .5vw;
+    margin-top: -4vw;
 }
 
 .blogs-description {
