@@ -1,0 +1,434 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    top: 0px;
+    left: 0px;
+    background: rgb(240, 240, 240);
+    opacity: 1;
+    margin-bottom: 25px;
+}
+
+.cover {
+    width: 100vw;
+    height: 50vw;
+    background-image: url(workcations-cover.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.opacity-film {
+    width: 100%;
+    height: 100%;
+    background-color: #00000040;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.search-box {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2.5vw 0;
+    border-radius: 10px;
+    margin: 0 15vw 10vw 15vw;
+}
+
+.heading1 {
+    font-size: 2vw;
+    font-weight: 600;
+    align-self: flex-start;
+    padding-left: 2.5vw;
+}
+
+.text {
+    align-self: flex-start;
+    font-size: 1.5vw;
+    padding-left: 2.5vw;
+    font-weight: 100;
+}
+
+.search-field {
+    width: 25vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: .5vw 1vw;
+    margin: 3.5vw 0 2.5vw 0;
+}
+
+.button {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6vw;
+    font-weight: 600;
+    background-color: #FF6B6C;
+    color: white;
+    padding: .5vw 0vw;
+    border-radius: 5px;
+}
+
+.features {
+    color: white;
+    font-size: 2.2vw;
+    line-height: 3vw;
+    font-weight: 600;
+    margin-bottom: 23.5vw;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.section-heading {
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+.section-sub-heading {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.cards-container {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2vw;
+    gap: 4vw;
+}
+
+.featured-card {
+    width: 24vw;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.featured-card-image {
+    width: 24vw;
+    height: 15vw;
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.opacity {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #00000040;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.type-tag {
+    width: 4vw;
+    height: 1.2vw;
+    align-self: flex-start;
+    font-size: .5vw;
+    line-height: 1vw;
+    font-weight: 400;
+    background-color: #ff6b6c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw 0 0 1vw;
+}
+
+.price-tag-cost {
+    align-self: flex-end;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: 0 .5vw .2vw 0;
+}
+
+.per-night {
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+.featured-card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vw .5vw;
+}
+
+.property-name {
+    font-size: 1vw;
+    line-height: 1.5vw;
+    font-weight: 600;
+    margin-bottom: .2vw;
+}
+
+.property-location {
+    font-size: .75vw;
+    line-height: 1.2vw;
+    font-weight: 100;
+    margin-bottom: .5vw;
+}
+
+.amenities {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.amenity-object {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.amenity-image {
+    height: .9vw;
+    margin-right: .3vw;
+}
+
+.amenity-name {
+    font-size: .65vw;
+    font-weight: 400;
+    color: #707070;
+}
+
+.section-container .button {
+    font-size: 1vw;
+    width: 12vw;
+    margin: 5vw 0 2vw 0;
+    padding: 1.5vw 0;
+}
+
+.states-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1vw;
+    margin-top: 2vw;
+    justify-content: center;
+}
+
+.states-card {
+    width: 19.25vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.states-band {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4vw;
+    background-color: #00000070;
+}
+
+.states-name {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.states-counter {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.types-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4vw;
+    overflow: scroll;
+    margin-top: 2vw;
+}
+
+.types-container::-webkit-scrollbar {
+    display: none;
+}
+
+.type-card {
+    flex-shrink: 0;
+    width: 19vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.type-image {
+    width: 19vw;
+    height: 14.75vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: white;
+    border-radius: 10px;
+}
+
+.type-price {
+    font-size: 1.5vw;
+    font-weight: 600;
+    background-color: #ff6b6c;
+    width: 7vw;
+    height: 3vw;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -0.5vw 1vw 0;
+}
+
+.type-per-night {
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+.type-details {
+    padding: .5vw;
+}
+
+.type-name {
+    font-size: 1vw;
+    font-weight: 600;
+    margin-bottom: .2vw;
+}
+
+.type-location {
+    font-size: .75vw;
+    font-weight: 300;
+}
+
+.blogs-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5vw;
+    overflow: scroll;
+    margin-top: 2vw;
+}
+
+.blogs-container::-webkit-scrollbar {
+    display: none;
+}
+
+.blogs-card {
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs-image {
+    width: 17vw;
+    height: 18vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blogs-title {
+    background-color: white;
+    color: black;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: .5vw;
+}
+
+.blogs-description {
+    background-color: #00000090;
+    font-size: .6vw;
+    font-weight: 300;
+    color: white;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    padding: .5vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.blogs-plus {
+    font-size: 2vw;
+    line-height: 2vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 20px;
+    background-color: #ff6b6c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 1vw 1vw 1vw;
+}
+
+.review-container {
+    width: 80vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: white;
+}
+
+.review-image {
+    width: 10vw;
+    height: 10vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+    margin: 2vw;
+}
+
+.review-name {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #424950;
+    margin-bottom: .3vw;
+}
+
+.review-property {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #ff6b6c;
+}
+
+.review-text {
+    font-size: 1vw;
+    font-weight: 300;
+    font-style: italic;
+    color: #424950;
+    padding: 2vw;
+    text-align: justify;
+}
+
+.vl {
+    border: 1px solid #FF6B6C;
+    height: 13vw;
+    margin-top: 2vw;
+}
