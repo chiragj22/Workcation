@@ -1,0 +1,824 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    top: 0px;
+    left: 0px;
+    background: rgb(245, 245, 245);
+    opacity: 1;
+    margin-bottom: 25px;
+}
+
+.cover {
+    width: 100vw;
+    height: 50vw;
+    background-image: url(workcations-cover.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+@media screen and (max-width: 600px) {
+    .cover {
+        height: 60vh;
+        background-position: top;
+    }
+}
+
+.opacity-film {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+    .opacity-film {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.search-box {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2.5vw 0;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .search-box {
+        margin: 0 15vw 10vw 15vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search-box {
+        width: 80vw;
+        padding: 5vw 0;
+    }
+}
+
+.heading1 {
+    font-size: 2vw;
+    font-weight: 600;
+    align-self: flex-start;
+    padding-left: 2.5vw;
+}
+
+@media screen and (max-width: 600px) {
+    .heading1 {
+        font-size: 3.6vw;
+        padding-left: 5vw;
+    }
+}
+
+.text {
+    align-self: flex-start;
+    font-size: 1.5vw;
+    padding-left: 2.5vw;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 600px) {
+    .search-box .text {
+        display: none;
+    }
+}
+
+.search-field {
+    width: 25vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: .8vw 1vw;
+    margin: 3.5vw 0 2.5vw 0;
+}
+
+@media screen and (max-width: 600px) {
+    .search-field {
+        width: 70vw;
+        font-size: 2vw;
+        padding: 1.2vw 2vw;
+        margin: 3vw 0;
+    }
+}
+
+.button {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6vw;
+    font-weight: 600;
+    background-color: #FF6B6C;
+    color: white;
+    padding: .5vw 0vw;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .button {
+        width: 70vw;
+        font-size: 3vw;
+        padding: 1vw 0vw;
+    }
+}
+
+.features {
+    color: white;
+    font-size: 2.2vw;
+    font-weight: 600;
+    margin-bottom: 23.5vw;
+}
+
+@media screen and (max-width: 600px) {
+    .features {
+        font-size: 5vw;
+        margin: 8vh 0 6vh 0;
+    }
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0 5vw;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+@media screen and (max-width: 600px) {
+    .section-container {
+        margin-top: 10vw;
+        width: 90vw;
+    }
+}
+
+.section-heading {
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+    .section-heading {
+        font-size: 4vw;
+    }
+}
+
+.section-sub-heading {
+    font-size: 1.2vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .section-sub-heading {
+        font-size: 2.5vw;
+    }
+}
+
+.cards-container {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+    .cards-container {
+        width: 90vw;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 4vw;
+    }
+}
+
+.featured-card {
+    width: 25vw;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+    margin: 0 2.5vw 2.5vw 0;
+
+}
+
+@media screen and (max-width: 600px) {
+    .featured-card {
+        width: 42vw;
+        margin: 0 5vw 5vw 0;
+    }
+}
+
+.featured-card-image {
+    width: 25vw;
+    height: 16vw;
+    border-radius: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+    .featured-card-image {
+        width: 42vw;
+        height: 28vw;
+    }
+}
+
+.opacity {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.type-tag {
+    width: 4.8vw;
+    height: 1.4vw;
+    align-self: flex-start;
+    font-size: .9vw;
+    line-height: 1vw;
+    font-weight: 400;
+    background-color: #ff6b6c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw 0 0 1vw;
+}
+
+@media screen and (max-width: 600px) {
+    .type-tag {
+        width: 6vw;
+        height: 2vw;
+        font-size: 1vw;
+        margin: 2vw 0 0 2vw;
+    }
+}
+
+.price-tag-cost {
+    align-self: flex-end;
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin: 0 .5vw .2vw 0;
+}
+
+@media screen and (max-width: 600px) {
+    .price-tag-cost {
+        font-size: 3.2vw;
+    }
+}
+
+.per-night {
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+    .per-night {
+        font-size: 2.4vw;
+        font-weight: 100;
+    }
+}
+
+.featured-card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vw .5vw;
+}
+
+@media screen and (max-width: 600px) {
+    .featured-card-details {
+        padding: 2vw 1.5vw;
+    }
+}
+
+.property-name {
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    font-weight: 600;
+    margin-bottom: .2vw;
+}
+
+@media screen and (max-width: 600px) {
+    .property-name {
+        font-size: 2.2vw;
+        line-height: 2.5vw;
+        margin-bottom: 1vw;
+    }
+}
+
+.property-location {
+    font-size: .95vw;
+    line-height: 1.2vw;
+    font-weight: 100;
+    margin-bottom: .5vw;
+}
+
+@media screen and (max-width: 600px) {
+    .property-location {
+        font-size: 1.7vw;
+        font-weight: 300;
+        margin-bottom: 2vw;
+    }
+}
+
+/*.amenities {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1vw;
+}
+
+.amenity-object {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .amenity-object {
+        flex-direction: column;
+    }
+}
+
+.amenity-image {
+    height: .9vw;
+    margin-right: .3vw;
+}
+
+@media screen and (max-width: 600px) {
+    .amenity-image {
+        height: 1.5vw;
+    }
+}
+
+.amenity-name {
+    font-size: .65vw;
+    font-weight: 400;
+    color: #707070;
+}*/
+
+.section-container .button {
+    font-size: 1.2vw;
+    width: 12vw;
+    margin: 5vw 0 2vw 0;
+}
+
+@media screen and (min-width: 600px) {
+    .section-container .button {
+        padding: 1.5vw 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-container .button {
+        font-size: 2vw;
+        width: 30vw;
+        height: 5vw;
+        margin: 5vw 0;
+    }
+}
+
+.states-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vw;
+}
+
+.states-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .states-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .states-container {
+        width: 90vw;
+        margin-top: 4vw;
+        align-items: center;
+        overflow: scroll;
+    }
+}
+
+.states-card {
+    width: 26vw;
+    height: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1vw 1vw 0;
+}
+
+@media screen and (max-width: 600px) {
+    .states-card {
+        flex-shrink: 0;
+        width: 41vw;
+        height: 32vw;
+        margin: 0 1.5vw 1.5 0;
+    }
+}
+
+.states-band {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4.5vw;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+@media screen and (max-width: 600px) {
+    .states-band {
+        height: 8vw;
+    }
+}
+
+.states-name {
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+    .states-name {
+        font-size: 3vw;
+    }
+}
+
+.states-counter {
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+    .states-counter {
+        font-size: 2vw;
+    }
+}
+
+.types-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: scroll;
+    margin-top: 2vw;
+    padding: 2vw 0;
+}
+
+@media screen and (max-width: 600px) {
+    .types-container {
+        width: 90vw;
+        margin-top: 4vw;
+    }
+}
+
+.types-container::-webkit-scrollbar {
+    display: none;
+}
+
+.type-card {
+    flex-shrink: 0;
+    width: 19vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+    margin-right: 4vw;
+}
+
+@media screen and (max-width: 600px) {
+    .type-card {
+        width: 30vw;
+        margin-right: 3vw;
+    }
+}
+
+.type-image {
+    width: 19vw;
+    height: 14.75vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .type-image {
+        width: 30vw;
+        height: 22vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .type-image.long {
+        height: 35vw;
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+.type-price {
+    font-size: 1.6vw;
+    font-weight: 600;
+    background-color: #ff6b6c;
+    width: 8vw;
+    height: 3vw;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -0.5vw 1vw 0;
+}
+
+@media screen and (max-width: 600px) {
+    .type-price {
+        font-size: 3vw;
+        width: 14vw;
+        height: 5vw;
+    }
+}
+
+.type-per-night {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+    .type-per-night {
+        font-size: 2vw;
+        font-weight: 100;
+    }
+}
+
+.type-details {
+    padding: .5vw;
+}
+
+@media screen and (max-width: 600px) {
+    .type-details {
+        padding: 1vw;
+    }
+}
+
+.type-name {
+    font-size: 1.4vw;
+    font-weight: 600;
+    margin-bottom: .2vw;
+}
+
+@media screen and (max-width: 600px) {
+    .type-name {
+        font-size: 2.5vw;
+    }
+}
+
+.type-location {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+    .type-location {
+        font-size: 2vw;
+    }
+}
+
+.blogs-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: scroll;
+    margin-top: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+    .blogs-container {
+        width: 90vw;
+        margin-top: 4vw;
+    }
+}
+
+.blogs-container::-webkit-scrollbar {
+    display: none;
+}
+
+.blogs-card {
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5vw;
+}
+
+@media screen and (max-width: 600px) {
+    .blogs-card {
+        width: 40vw;
+    }
+}
+
+.blogs-image {
+    width: 17vw;
+    height: 18vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .blogs-image {
+        width: 40vw;
+        height: 45vw;
+    }
+}
+
+.blogs-title {
+    height: 3vw;
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: .5vw;
+    margin-top: -4vw;
+}
+
+@media screen and (max-width: 600px) {
+    .blogs-title {
+        height: 9vw;
+        font-size: 3vw;
+        padding: 0 1vw;
+        margin-top: -9vw;
+    }
+}
+
+.blogs-description {
+    background-color: white;
+    font-size: .8vw;
+    font-weight: 300;
+    color: black;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    padding: .5vw;
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    .blogs-description {
+        font-size: 2vw;
+        padding: 1vw;
+    }
+}
+
+.blogs-plus {
+    font-size: 2vw;
+    line-height: 2vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 20px;
+    background-color: #ff6b6c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 1vw 1vw 1vw;
+}
+
+@media screen and (max-width: 600px) {
+    .blogs-plus {
+        font-size: 5vw;
+        line-height: 5vw;
+        width: 6vw;
+        height: 6vw;
+        margin: 6vw 2vw 2vw 3vw;
+    }
+}
+
+.review-container {
+    margin-top: 2vw;
+    display: flex;
+}
+
+@media screen and (min-width: 600px) {
+    .review-container {
+        width: 80vw;
+        flex-direction: row;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .review-container {
+        margin-top: 4vw;
+        justify-content: center;
+    }
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .review-card {
+        width: 60vw;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.review-image {
+    width: 10vw;
+    height: 10vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+    margin: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+    .review-image {
+        width: 17vw;
+        height: 17vw;
+    }
+}
+
+.review-name {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #424950;
+    margin-bottom: .3vw;
+}
+
+@media screen and (max-width: 600px) {
+    .review-name {
+        font-size: 2.4vw;
+    }
+}
+
+.review-property {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #ff6b6c;
+}
+
+@media screen and (max-width: 600px) {
+    .review-property {
+        font-size: 2.4vw;
+    }
+}
+
+.review-text {
+    font-size: 1vw;
+    font-weight: 300;
+    font-style: italic;
+    color: #424950;
+    padding: 2vw;
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    .review-text {
+        font-size: 1.8vw;
+        padding: 2vw 7vw;
+    }
+}
+
+.vl {
+    border: 1px solid #FF6B6C;
+    height: 13vw;
+    margin-top: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+    .hide {
+        display: none;
+    }
+}

@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 0 25px 0;
     font-family: "Open Sans", sans-serif;
     top: 0px;
     left: 0px;
@@ -83,7 +83,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5vw;
+    margin-top: 10vw;
 }
 
 .section-heading {
@@ -135,7 +135,7 @@ body {
     width: 6vw;
     height: 2vw;
     align-self: flex-start;
-    font-size: 1.2vw;
+    font-size: 12px;
     line-height: 1vw;
     font-weight: 400;
     background-color: #FF6B6C;
@@ -178,7 +178,7 @@ body {
     margin-bottom: 2vw;
 }
 
-.amenities {
+/*.amenities {
     display: flex;
     flex-direction: row;
     gap: 1vw;
@@ -199,7 +199,7 @@ body {
     font-size: 1.5vw;
     font-weight: 400;
     color: #707070;
-}
+}*/
 
 .section-container .button {
     font-size: 2vw;
@@ -223,8 +223,8 @@ body {
 
 .states-card {
     flex-shrink: 0;
-    width: 39vw;
-    height: 30vw;
+    width: 41vw;
+    height: 32vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -363,10 +363,10 @@ body {
 }
 
 .blogs-description {
-    background-color: rgba(0, 0, 0, 0.56);
+    background-color: white;
     font-size: 2vw;
     font-weight: 300;
-    color: white;
+    color: black;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     padding: 1vw;
@@ -381,6 +381,7 @@ body {
     height: 6vw;
     border-radius: 20px;
     background-color: #ff6b6c;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
